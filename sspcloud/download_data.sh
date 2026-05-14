@@ -24,6 +24,10 @@ FILES=(
     "s3sspcloud/decubellis/Step1/Input/Distribution_municipalities.csv"
     "s3sspcloud/decubellis/Step1/Input/POSAS_2023_en_Municipalities.zip"
     "s3sspcloud/decubellis/Step1/Input/Resident population.csv"
+    "s3sspcloud/decubellis/Step1/Output/real_data_datasetM10_TH20_RN_PR0_4CAT_MISS_X2.csv"
+    "s3sspcloud/decubellis/Step1/Output/real_data_datasetM10_TH20_RY_PR40_4CAT_MISS_X2.csv"
+    "s3sspcloud/decubellis/Step1/Output/real_data_datasetM2_TH20_RN_PR0_4CAT_MISS_X2.csv"
+    "s3sspcloud/decubellis/Step1/Output/real_data_datasetM2_TH20_RY_PR40_4CAT_MISS_X2.csv"
 )
 
 # Function to download with retry
