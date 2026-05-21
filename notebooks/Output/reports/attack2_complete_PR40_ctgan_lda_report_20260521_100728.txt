@@ -1,0 +1,80 @@
+================================================================================
+ATTACK #2 - COMPLETE ENHANCED VERSION RESULTS
+================================================================================
+
+Date: 2026-05-21 10:07:28
+PR Value: 40
+Synthetic model: ctgan
+Attacker knows: 8000 TR samples + 8000 SD samples
+Attacker target: 2000 VR samples
+Number of meta-features: 83
+
+FEATURE CONFIGURATION:
+  LDA features: YES
+  Enhanced options: NO
+  Cross-features: NO
+
+ATTACK PERFORMANCE:
+  Validation accuracy on TR: 0.5475
+  Attack accuracy on VR: 0.5410
+  Random baseline: 0.2500
+  Improvement: 0.2910
+
+VR CONFUSION MATRIX:
+        Predicted
+        P1 P2 P3 P4
+        --------------------
+True 1 |  263   92   90   84
+True 2 |   98  259   61   98
+True 3 |   60   57  280   87
+True 4 |   56   65   70  280
+
+VR CLASS-WISE ACCURACY:
+  Class 1: 0.497 (263/529)
+  Class 2: 0.502 (259/516)
+  Class 3: 0.579 (280/484)
+  Class 4: 0.594 (280/471)
+
+INDEPENDENT TEST PERFORMANCE (M2):
+  Test accuracy: 0.5430
+  Generalization gap: -0.0020
+
+M2 CONFUSION MATRIX:
+        Predicted
+        P1 P2 P3 P4
+        --------------------
+True 1 |  273   83   67   78
+True 2 |   70  259   62   85
+True 3 |   84   80  281  101
+True 4 |   63   61   80  273
+
+M2 CLASS-WISE ACCURACY:
+  Class 1: 0.545 (273/501)
+  Class 2: 0.544 (259/476)
+  Class 3: 0.515 (281/546)
+  Class 4: 0.572 (273/477)
+
+TOP 20 MOST IMPORTANT FEATURES:
+--------------------------------------------------------------------------------
+Rank   Importance   Feature
+--------------------------------------------------------------------------------
+1      0.0824       lda_dim_1
+2      0.0680       lda_dim_2
+12     0.0678       lda_closest_class
+5      0.0545       lda_cos_to_class_1
+9      0.0387       lda_cos_to_class_3
+16     0.0277       lda_dist_norm_class_3
+7      0.0263       lda_cos_to_class_2
+15     0.0248       lda_dist_norm_class_2
+65     0.0243       tr_majority_class
+62     0.0197       tr_neigh_class_2
+14     0.0190       lda_dist_norm_class_1
+29     0.0184       sd_class_2_dist_median
+47     0.0172       sd_class_4_dist_median
+64     0.0170       tr_neigh_class_4
+17     0.0166       lda_dist_norm_class_4
+11     0.0165       lda_cos_to_class_4
+63     0.0156       tr_neigh_class_3
+37     0.0155       sd_class_3_dist_mean
+61     0.0149       tr_neigh_class_1
+8      0.0146       lda_dist_to_class_3
